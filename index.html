@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeexCodee - Zgjidhje Profesionale të Kodimit</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/logo/logo001.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-code"></i> Neex<span>Codee</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" data-i18n="nav_home">Kryefaqja</a></li>
+                <li><a href="#services" data-i18n="nav_services">Shërbimet</a></li>
+                <li><a href="#pricing" data-i18n="nav_pricing">Çmimet</a></li>
+                <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+                <li><a href="#about" data-i18n="nav_about">Rreth Nesh</a></li>
+                <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                <li><a href="#contact" class="btn-nav" data-i18n="nav_contact">Kontakt</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="langToggle" class="icon-btn" title="Ndrysho Gjuhën">
+                    <span id="langText">EN</span>
+                </button>
+                <button id="themeToggle" class="icon-btn" title="Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge" data-i18n="hero_badge">🚀 Agjencia #1 e Zhvillimit</span>
+                <h1><span data-i18n="hero_title1">Krijojmë</span> <span class="gradient-text" data-i18n="hero_title2">Website</span> <span data-i18n="hero_title3">që Rrit Biznesin Tënd</span></h1>
+                <p data-i18n="hero_desc">NeexCodee ofron zgjidhje profesionale të kodimit, dizajnit dhe marketingut digjital për biznesin tuaj.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span data-i18n="hero_btn1">Filloni Projektin</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#portfolio" class="btn btn-outline" data-i18n="hero_btn2">Shiko Punimet</a>
+                </div>
+                <div class="hero-stats">
+                    <div><h3 data-counter="250">0</h3><p data-i18n="stat_projects">Projekte</p></div>
+                    <div><h3 data-counter="180">0</h3><p data-i18n="stat_clients">Klientë</p></div>
+                    <div><h3 data-counter="5">0</h3><p data-i18n="stat_years">Vite Përvojë</p></div>
+                    <div><h3 data-counter="98">0</h3><p data-i18n="stat_satisfaction">Kënaqësi %</p></div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-card">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code><span class="c-purple">const</span> <span class="c-blue">neexCodee</span> = {
+  <span class="c-green">services</span>: [<span class="c-orange">'Web'</span>, <span class="c-orange">'App'</span>],
+  <span class="c-green">quality</span>: <span class="c-orange">'100%'</span>,
+  <span class="c-green">passion</span>: <span class="c-purple">true</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="serv_sub">SHËRBIMET TONA</span>
+                <h2><span data-i18n="serv_title1">Çfarë</span> <span class="gradient-text" data-i18n="serv_title2">Ofrojmë</span></h2>
+                <p data-i18n="serv_desc">Zgjidhje të plota digjitale të përshtatura për nevojat e biznesit tuaj</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3 data-i18n="s1_title">Zhvillim Web</h3>
+                    <p data-i18n="s1_desc">Website-e moderne, të shpejta dhe responsive me teknologjitë më të fundit.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 data-i18n="s2_title">Aplikacione Mobile</h3>
+                    <p data-i18n="s2_desc">Aplikacione iOS dhe Android me performancë të lartë dhe dizajn tërheqës.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3 data-i18n="s3_title">Dizajn UI/UX</h3>
+                    <p data-i18n="s3_desc">Dizajn kreativ dhe intuitiv që përmirëson përvojën e përdoruesit.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 data-i18n="s4_title">Marketing Digjital</h3>
+                    <p data-i18n="s4_desc">Strategji SEO, reklamim dhe menaxhim i rrjeteve sociale për rritje.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3 data-i18n="s5_title">E-Commerce</h3>
+                    <p data-i18n="s5_desc">Dyqane online të fuqishme me pagesa të sigurta dhe menaxhim të lehtë.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-i18n="s6_title">Siguri Kibernetike</h3>
+                    <p data-i18n="s6_desc">Mbrojtje e plotë për të dhënat dhe sistemet tuaja digjitale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="proc_sub">PROCESI</span>
+                <h2><span data-i18n="proc_title1">Si</span> <span class="gradient-text" data-i18n="proc_title2">Punojmë</span></h2>
+                <p data-i18n="proc_desc">4 hapa të thjeshtë drejt suksesit digjital</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fas fa-comments"></i></div>
+                    <h3 data-i18n="proc1_title">Konsultim</h3>
+                    <p data-i18n="proc1_desc">Dëgjojmë idetë dhe qëllimet e tua për projektin.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+                    <h3 data-i18n="proc2_title">Dizajn</h3>
+                    <p data-i18n="proc2_desc">Krijojmë mockup dhe dizajn unik sipas brandit tënd.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="fas fa-code"></i></div>
+                    <h3 data-i18n="proc3_title">Zhvillim</h3>
+                    <p data-i18n="proc3_desc">Kodojmë me teknologjitë më moderne dhe të shpejta.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                    <h3 data-i18n="proc4_title">Lançim</h3>
+                    <p data-i18n="proc4_desc">Testojmë, lançojmë dhe mbështesim projektin tënd.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <div class="about-box">
+                    <i class="fas fa-rocket"></i>
+                    <h3 data-i18n="about_mission">Misioni Ynë</h3>
+                    <p data-i18n="about_mission_desc">Të transformojmë idetë tuaja në realitet digjital.</p>
+                </div>
+            </div>
+            <div class="about-text">
+                <span class="subtitle" data-i18n="about_sub">RRETH NESH</span>
+                <h2><span data-i18n="about_title1">Ekipi Pas</span> <span class="gradient-text">NeexCodee</span></h2>
+                <p data-i18n="about_desc">Ne jemi një ekip i pasionuar zhvilluesish, dizajnerësh dhe strategësh digjitalë që punojnë së bashku për të krijuar zgjidhje inovative.</p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="about_l1">Teknologji moderne dhe të provuara</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="about_l2">Mbështetje 24/7 për klientët</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="about_l3">Çmime konkurruese dhe transparente</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="about_l4">Dorëzim në kohë i projekteve</span></li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" data-i18n="about_btn">Punoni me Ne</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="price_sub">ÇMIMET</span>
+                <h2><span data-i18n="price_title1">Planet</span> <span class="gradient-text" data-i18n="price_title2">Tona</span></h2>
+                <p data-i18n="price_desc">Zgjidh planin që i përshtatet biznesit tënd</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Basic -->
+                <div class="pricing-card">
+                    <h3 data-i18n="price1_name">Basic</h3>
+                    <div class="price">€299<span data-i18n="price_per">/projekt</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price1_f1">1-3 faqe</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price1_f2">Responsive design</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price1_f3">Formë kontakti</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price1_f4">7 ditë dorëzim</span></li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline" data-i18n="price_btn">Zgjidh Planin</a>
+                </div>
+
+                <!-- Standard (Popular) -->
+                <div class="pricing-card popular">
+                    <span class="popular-badge" data-i18n="popular">🔥 POPULLOR</span>
+                    <h3 data-i18n="price2_name">Standard</h3>
+                    <div class="price">€599<span data-i18n="price_per">/projekt</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price2_f1">5-8 faqe</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price2_f2">Responsive + Animacione</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price2_f3">Blog & CMS</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price2_f4">SEO Bazik</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price2_f5">2 rishikime</span></li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" data-i18n="price_btn">Zgjidh Planin</a>
+                </div>
+
+                <!-- Premium -->
+                <div class="pricing-card">
+                    <h3 data-i18n="price3_name">Premium</h3>
+                    <div class="price">€1199<span data-i18n="price_per">/projekt</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price3_f1">Faqe pa limit</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price3_f2">Dizajn Custom</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price3_f3">SEO i Plotë</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price3_f4">E-Commerce</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="price3_f5">Mbështetje 24/7</span></li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline" data-i18n="price_btn">Zgjidh Planin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="port_sub">PORTFOLIO</span>
+                <h2><span data-i18n="port_title1">Projektet e</span> <span class="gradient-text" data-i18n="port_title2">Fundit</span></h2>
+                <p data-i18n="port_desc">Disa nga punët tona më të mira për klientët</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-img"><img src="img/1.png" alt="Studio Amari"></div>
+                    <div class="portfolio-info">
+                        <h3>Studio Amari</h3>
+                        <p>Photographer & Videographer & Editor</p>
+                        <a href="https://amar1photography.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                            <span data-i18n="view_project">Shiko Projektin</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img"><img src="img/2.png" alt="Vape Legends Shop"></div>
+                    <div class="portfolio-info">
+                        <h3>Vape Legends Shop</h3>
+                        <p>E-Commerce & Online Store</p>
+                        <a href="https://vapelegends.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                            <span data-i18n="view_project">Shiko Projektin</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img"><img src="img/3.png" alt="Roba Qepës Jasë"></div>
+                    <div class="portfolio-info">
+                        <h3>Roba Qepës Jasë</h3>
+                        <p>Tailoring & Fashion Website</p>
+                        <a href="https://robaqepsjasadushja.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                            <span data-i18n="view_project">Shiko Projektin</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img"><img src="img/4.png" alt="QR Code Generator"></div>
+                    <div class="portfolio-info">
+                        <h3>QR Code Generator</h3>
+                        <p>Generate QR Codes for various purposes</p>
+                        <a href="https://cozy-cucurucho-f08c7c.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                            <span data-i18n="view_project">Shiko Projektin</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="test_sub">DËSHMI</span>
+                <h2><span data-i18n="test_title1">Çfarë Thonë</span> <span class="gradient-text" data-i18n="test_title2">Klientët</span></h2>
+                <p data-i18n="test_desc">Përvoja reale nga klientët tanë</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p data-i18n="test1_text">"NeexCodee transformoi biznesin tonë! Website-i i ri solli 3x më shumë klientë brenda 2 muajsh."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div>
+                            <h4>Amar Ibishi</h4>
+                            <span>Studio Amari</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p data-i18n="test2_text">"Profesionalizëm i lartë, dorëzim në kohë dhe dizajn fantastik. Rekomandoj pa hezitim!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">V</div>
+                        <div>
+                            <h4>Vape Legends</h4>
+                            <span>E-Commerce</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p data-i18n="test3_text">"Shërbim i shkëlqyer! Çdo detaj u mendua me kujdes. Faleminderit NeexCodee!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div>
+                            <h4>Roba Qepës Jasë</h4>
+                            <span>Fashion Website</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="faq_sub">FAQ</span>
+                <h2><span data-i18n="faq_title1">Pyetje të</span> <span class="gradient-text" data-i18n="faq_title2">Shpeshta</span></h2>
+                <p data-i18n="faq_desc">Përgjigjet për pyetjet më të zakonshme</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4 data-i18n="faq1_q">Sa kohë zgjat një projekt?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq1_a">Zakonisht 1-4 javë në varësi të kompleksitetit të projektit.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4 data-i18n="faq2_q">A ofroni mbështetje pas lançimit?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq2_a">Po! Ofrojmë 30 ditë mbështetje falas për çdo projekt të përfunduar.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4 data-i18n="faq3_q">A mund të përditësoj website-in vetë?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq3_a">Po, ofrojmë trajnim dhe CMS të lehtë për përdorim.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4 data-i18n="faq4_q">Si funksionon pagesa?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq4_a">50% parapagesë dhe 50% pas përfundimit të projektit.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4 data-i18n="faq5_q">A punoni me klientë ndërkombëtarë?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq5_a">Po! Punojmë me klientë nga e gjithë bota në distancë.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4 data-i18n="faq6_q">Çfarë teknologjish përdorni?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq6_a">HTML, CSS, JavaScript, React, Node.js, WordPress dhe Figma.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle" data-i18n="cont_sub">KONTAKT</span>
+                <h2><span data-i18n="cont_title1">Le të</span> <span class="gradient-text" data-i18n="cont_title2">Bashkëpunojmë</span></h2>
+                <p data-i18n="cont_desc">Na kontaktoni për projektin tuaj të radhës</p>
+            </div>
+            <div class="contact-grid">
+                <a href="https://wa.me/38343536087" target="_blank" rel="noopener" class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+383 43 536 087</p>
+                    </div>
+                </a>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4 data-i18n="cont_address">Adresa</h4>
+                        <p data-i18n="cont_city">Prishtinë, Kosovë</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#home" class="logo"><i class="fas fa-code"></i> Neex<span>Codee</span></a>
+                    <p data-i18n="footer_desc">Zgjidhje profesionale të kodimit për biznesin tuaj digjital.</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/neexcodee" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/amar-ibishi-8a2727301/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/ibishiamar" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 data-i18n="footer_quick">Lidhje të Shpejta</h4>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav_home">Kryefaqja</a></li>
+                        <li><a href="#services" data-i18n="nav_services">Shërbimet</a></li>
+                        <li><a href="#pricing" data-i18n="nav_pricing">Çmimet</a></li>
+                        <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+                        <li><a href="#about" data-i18n="nav_about">Rreth Nesh</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 data-i18n="footer_services">Shërbimet</h4>
+                    <ul>
+                        <li><a href="#services" data-i18n="s1_title">Zhvillim Web</a></li>
+                        <li><a href="#services" data-i18n="s2_title">Aplikacione Mobile</a></li>
+                        <li><a href="#services" data-i18n="s3_title">Dizajn UI/UX</a></li>
+                        <li><a href="#services" data-i18n="s4_title">Marketing Digjital</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_rights">&copy; 2026 NeexCodee. Të gjitha të drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP FLOAT ===== -->
+    <a href="https://wa.me/38343536087" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip" data-i18n="wa_tooltip">Bisedo me ne!</span>
+    </a>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
